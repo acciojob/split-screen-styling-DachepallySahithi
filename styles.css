@@ -1,1 +1,60 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #D7E8D4;
+  flex: 0 0 16.66%; /* Takes up 1/6th of the viewport width */
+  padding: 1em;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.header, .footer {
+  background-color: yellowgreen;
+  padding: 1em;
+}
+
+.header {
+  height: 20vh; /* Takes up 1/5th of the viewport height */
+}
+
+.footer {
+  height: 20vh; /* Takes up 1/5th of the viewport height */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  padding: 1em;
+}
+
+.article {
+  flex: 3; /* Takes up 3/4th of the content section */
+  min-height: 60vh; /* Minimum height of 60vh */
+  padding: 1em;
+  background-color: lightgray;
+}
+
+.aside {
+  flex: 1; /* Takes up 1/4th of the content section */
+  padding: 1em;
+  background-color: lightblue;
+}
